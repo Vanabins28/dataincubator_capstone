@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 #from six.moves import urllib
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import os
