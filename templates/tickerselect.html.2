@@ -1,0 +1,35 @@
+<!doctype html>
+<title>A short quiz</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Drug Interaction Network Construction</h1>
+  <div class=metanav>
+
+<h4>
+Select Targets/Drugs/Disease
+</h4>
+
+<form id='userinfoform_lulu' action='graph_data' >
+   <p>
+   protein: <input type='text' name='Protein' />
+   </p>
+   <p>
+   molecules: <input type='text' name='Molecules' />
+   </p>
+   <p>
+   disease: <input type='text' name='Disease' />
+   </p>
+   <p>
+   email/login: <input type='text' name='Email/Login:' />
+   </p>
+  <input type="checkbox" name="Community" value="community"> Perform Community Analysis?<br>
+  <input type="checkbox" name="Potency Screen" value="potency"> Limit Potency Screen?<br>
+  <input type="checkbox" name="generate Pfeatures" value="Pfeature" > Generate Protein features?<br>
+  <input type="checkbox" name="generate Mfeatures" value="Ffeature" > Generate Molecular features?<br>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>

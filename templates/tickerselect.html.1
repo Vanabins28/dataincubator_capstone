@@ -1,0 +1,31 @@
+<!doctype html>
+<title>A short quiz</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Drug Interaction Network Construction</h1>
+  <div class=metanav>
+
+<h4>
+Select Targets/Drugs/Disease
+</h4>
+
+<form id='userinfoform_lulu' method='post' action='graph_data' > <!-- action is the URL you want to move to next-->
+   <p>
+   protein: <input type='text' name='Protein' />
+   </p>
+   <p>
+   mols: <input type='text' name='Molecules' />
+   </p>
+   <p>
+   disease: <input type='text' name='Disease' />
+   </p>
+   <p>
+   email: <input type='text' name='Email/Login:' />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
